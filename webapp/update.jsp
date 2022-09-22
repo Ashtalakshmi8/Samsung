@@ -13,77 +13,61 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<title>login</title>
+<title>update</title>
+
 
 </head>
+
 <body>
-
 	<%@include file="components/navbar.jsp"%>
+	<div class="container text-center ">
+		<h1>
+			<div style="color: green"></div>
 
+		</h1>
 
-	<div class="row mt-5 ">
+	</div>
+<div class="row mt-5 ">
 		<div class="col-md-4 offset-md-4">
 
-
-
-
-
-
-			<h3 class="text-center my-3 ">Login here</h3>
-			<h1>
-				<p style="color: red">${errorUsername}</p>
-				<p style="color: red">${errorPassword}</p>
-				<p style="color: red">${success}</p>
-
-
-
-
-
-
-			</h1>
-
-
-			<form action="login" method="post">
-
-
+<form action="update" method="post">
+			
 
 				<div class="mb-3">
 
 					<label for="userName" class="form-label">userName</label> <input
 						type="userName" class="form-control" id="userName"
 						aria-describedby="userNameHelp" placeholder="Enter userName"
-						name="userName">
+						name="userName" >
 				</div>
+			
 
-				<div class="mb-3">
-
-					<label for="password" class="form-label">password</label> <input
+					<label for="password" class="form-label">fullName</label> <input
 						type="password" class="form-control" id="password"
 						aria-describedby="passwordHelp" placeholder="Enter password"
-						name="password">
+						name="password" value={list.password}>
 				</div>
+
+				
+
+
+
+
+				<div class="container text-center ">
+					<button type="submit" class="btn btn-primary custom-bg">submit</button>
+
+				</div>
+
+
+
+			</form>
+<h2>  <a href="editNew.jsp"></a></h2>
+
 		</div>
-
-		<div class="container text-center ">
-			<a href="login.jsp"></a> <a href="">${forgotPassword}</a>
-
-			<!--  	<h2>  <a href="register.jsp"></a></h2>-->
-		</div>
-
-
-
-		<div class="container text-center ">
-			<button type="submit" class="btn btn-primary custom-bg">submit</button>
-
-		</div>
-		</a>
 	</div>
-	</form>
-	</
-	</div>
-	</div>
-	<%@include file="components/base.jsp"%>
-
+					  <%@include file="components/base.jsp"%>
+	
 </body>
 </html>
